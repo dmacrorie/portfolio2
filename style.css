@@ -137,6 +137,16 @@ UTILITIES
 
 /*MAIN BODY*/
 
+@font-face {
+    font-family: Roboto;
+    src: url(https://fonts.google.com/specimen/Roboto)
+}
+
+div {
+    font-family: Roboto sans-serif;
+
+}
+
 .section {
     width: 600px;
     max-height: 300px;
@@ -154,11 +164,27 @@ UTILITIES
     width: 100%;
     height: 100px;
     bottom: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
     }
 
-.btn {
-    width: 40px;
-    height: 32px;
-    color: white;
+.logowhite {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(87deg) brightness(1010%) contrast(102%);
+    /* border: solid red;  */
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+}
+
+.contactinfo {
+    max-width: 20px;
+
+}
+
+.contactinfophone {
+    max-width: 26px;
+    filter: brightness(0) invert(1);
+
 }
