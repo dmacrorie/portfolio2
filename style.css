@@ -134,6 +134,12 @@ UTILITIES
    .dropdown li:hover {
     background-color: #4c9e9e;
    }
+
+   .section{
+    margin: 5px;
+    padding: 3px;
+   }
+
    }
 
 /*MAIN BODY*/
@@ -148,9 +154,10 @@ div {
 
 }
 
+
 .section {
     width: auto;
-    max-height: 300px;
+    min-height: 100px;
     background-color:#20373f;
     border: 2px solid white;
     border-radius: 10px;
@@ -158,6 +165,25 @@ div {
     margin: 120px;
     padding: 20px;
     }
+
+/* ABOUT ME */
+
+.develop {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.frontend {
+    max-width: 50px;
+}
+
+.centerimage {
+    text-align: center;
+}
 
 /* PORTFOLIO */
 
