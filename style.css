@@ -42,6 +42,7 @@ UTILITIES
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
    }
    .nav-links a {
     color: #fff;
@@ -133,6 +134,12 @@ UTILITIES
    .dropdown li:hover {
     background-color: #4c9e9e;
    }
+
+   .section{
+    margin: 5px;
+    padding: 3px;
+   }
+
    }
 
 /*MAIN BODY*/
@@ -147,15 +154,90 @@ div {
 
 }
 
+
 .section {
-    width: 600px;
-    max-height: 300px;
+    width: auto;
+    min-height: 100px;
     background-color:#20373f;
     border: 2px solid white;
+    border-radius: 10px;
     color: white;
-    padding: 10px;
     margin: 120px;
+    padding: 20px;
     }
+
+/* ABOUT ME */
+
+.develop {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.frontend {
+    max-width: 50px;
+}
+
+.centerimage {
+    text-align: center;
+}
+
+/* PORTFOLIO */
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.image-gallery > li {
+    flex-basis: 250px;
+    position: relative;
+    cursor: pointer;
+}
+
+.image-gallery li img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(27, 23, 23, 0.8);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.2s 0.1s ease-in-out;
+    color: #fff;
+    border-radius: 5px;
+    /* center overlay text */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+  
+  /* hover */
+  .image-gallery li:hover .overlay {
+    transform: scale(1);
+  }
+
+.image-gallery::after {
+    content: "";
+    flex-basis: 250px;
+  }
+
 /*FOOTER*/
 
  .footer {
@@ -163,19 +245,44 @@ div {
     color: white;
     width: 100%;
     height: 100px;
-    bottom: 0;
     display: flex; 
     justify-content: center;
     align-items: center;
     align-content: space-evenly;
     }
 
+
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+
 .logowhite {
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(87deg) brightness(1010%) contrast(102%);
-    /* border: solid red;  */
-    width: 40px;
-    height: 40px;
-    padding: 20px;
+    border: solid #20373f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logowhite:hover {
+    background-color: #fff;
+}
+
+.logo:hover {
+filter: invert(85%) sepia(66%) saturate(307%) hue-rotate(149deg) brightness(103%) contrast(92%);
+}
+
+.logowhites {
+    padding: 13px;
+    border: solid #20373f;
+    border-radius: 100%;
+}
+
+.logowhites:hover {
+    background-color: #fff;
 }
 
 .contactinfo {
