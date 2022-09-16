@@ -42,7 +42,7 @@ UTILITIES
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 100;
    }
    .nav-links a {
     color: #fff;
@@ -83,10 +83,10 @@ UTILITIES
    .dropdown li {
     padding: 0.5em 1em;
     width: 8em;
-    text-align: center;
+    text-align: left;
    }
    .dropdown li:hover {
-    background-color: rgba(0,0,0,0);
+    background-color: #215559;
    }
    .services:hover .dropdown {
     display: block;
@@ -135,7 +135,7 @@ UTILITIES
     background-color: #4c9e9e;
    }
 
-   .section{
+   .section {
     margin: 5px;
     padding: 3px;
    }
@@ -144,13 +144,9 @@ UTILITIES
 
 /*MAIN BODY*/
 
-@font-face {
-    font-family: Roboto;
-    src: url(https://fonts.google.com/specimen/Roboto)
-}
 
 div {
-    font-family: Roboto sans-serif;
+    font-family: Roboto serif;
 
 }
 
@@ -162,9 +158,27 @@ div {
     border: 2px solid white;
     border-radius: 10px;
     color: white;
-    margin: 120px;
+    margin: 50px;
     padding: 20px;
     }
+
+/* PORTRAIT */
+
+.portrait {
+    
+    z-index: 100;
+    max-width: 100%;
+    min-height: 100px;
+
+}
+
+.title {
+    display: flex;
+    ;
+    color: #fff;
+
+  
+}
 
 /* ABOUT ME */
 
@@ -174,7 +188,8 @@ div {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-
+    text-align: center;
+    row-gap: 70px;
 }
 
 .frontend {
@@ -187,6 +202,7 @@ div {
 
 /* PORTFOLIO */
 
+
 .image-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -197,7 +213,7 @@ div {
 }
 
 .image-gallery > li {
-    flex-basis: 250px;
+    flex-basis: 280px;
     position: relative;
     cursor: pointer;
 }
@@ -221,22 +237,51 @@ div {
     transition: all 0.2s 0.1s ease-in-out;
     color: #fff;
     border-radius: 5px;
-    /* center overlay text */
+/* 
+    SAME AS BELOW */
+
     display: flex;
+    justify-content: center; 
     align-items: center;
-    justify-content: space-around;
-    align-content: space-around;
-  }
+}
+
+    /* center overlay text */
+/* 
+ .portfoliotext {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  } */
   
   /* hover */
   .image-gallery li:hover .overlay {
     transform: scale(1);
+    z-index: 1;
   }
 
 .image-gallery::after {
     content: "";
     flex-basis: 250px;
   }
+
+
+/* CONTACT ME  */
+
+input[type=submit] {
+  background-color: #215559;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+  font-weight: bold;
+}
+
+textarea {
+    width: 90%;
+    min-height:50px;
+}
 
 /*FOOTER*/
 
@@ -271,8 +316,13 @@ div {
     background-color: #fff;
 }
 
+.img {
+    z-index: 100;
+}
+
 .logo:hover {
 filter: invert(85%) sepia(66%) saturate(307%) hue-rotate(149deg) brightness(103%) contrast(92%);
+z-index: 100;
 }
 
 .logowhites {
@@ -283,6 +333,7 @@ filter: invert(85%) sepia(66%) saturate(307%) hue-rotate(149deg) brightness(103%
 
 .logowhites:hover {
     background-color: #fff;
+    z-index: -24;
 }
 
 .contactinfo {

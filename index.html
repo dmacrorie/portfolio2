@@ -11,7 +11,7 @@
 
    <nav class="navbar" id="home">
      <!-- LOGO -->
-     <div class="logo">DM</div>
+     <div class="logo"></div>
      <!-- NAVIGATION MENU -->
      <ul class="nav-links">
        <!-- USING CHECKBOX HACK -->
@@ -25,78 +25,115 @@
            <a href="#projects">Projects</a>
            <!-- DROPDOWN MENU -->
            <ul class="dropdown">
-             <li><a href="/">Project 1</a></li>
-             <li><a href="/">Project 2</a></li>
-             <li><a href="/">Project 3</a></li>
-             <li><a href="/">Project 4</a></li>
-             <li><a href="/">Project 5</a></li>
-             <li><a href="/">Project 6</a></li>
+             <li><a href="/">Northern Electric</a></li>
+             <li><a href="/">Cyberdyne Systems</a></li>
+             <li><a href="/">Empira</a></li>
+             <li><a href="/">Polyskope Labs</a></li>
+             <li><a href="/">Lake Effect</a></li>
+             <li><a href="/">Masrani</a></li>
            </ul>
          </li>
          <li><a href="#contact">Contact</a></li>
        </div>
      </ul>
-   </nav>
+   </nav><br><br><br>
+
+<!-- PORTRAIT -->
+
+   <div class="portrait">
+      <img src="./portrait.png" alt="portrait" style="width:100%" >
+   </div>
+
+
 
    <!-- ABOUT ME -->
    
    <div id="aboutme"  class="section">
-      <h2>About me...</h2><br><br>
+      <h2>About me</h2><br><hr style="width:30%;text-align:left;"><br><br>
       <div class="develop">
         <div>
           <div class="centerimage"><img src="./frontent.svg" class="frontend"></div><br>
           <h2>Frontend developer</h2><br><hr><br>
           <p>I code websites from scratch</p><br>
-          <p>Languages I use:</p><br>
+          <p><strong>Languages I use:</strong></p><br>
           <p>HTML, CSS, Git...</p>
         </div>
         <div>
           <div class="centerimage"><img src="./backend.svg" class="frontend"></div><br>
           <h2>Backend developer</h2><br><hr><br>
           <p>blah blah blah</p><br>
-          <p>Languages I use:</p><br>
-          <p>Java, PHP...</p>
+          <p><strong>Languages I use:</strong></p><br>
+          <p>Java, PHP...</p><br><br><br>
         </div>
       </div>
    </div>
 
    <!-- PROJECTS -->
    <div id="projects"  class="container">
-      Projects
       <ul class="image-gallery">
         <li>
           <img src="https://pbs.twimg.com/media/ECAsxnNXUAEDQwV?format=jpg&name=large" alt="Northern power"/>
-          <div class="overlay"><span></span></div>
+          <div class="overlay"><div class="portfoliotext">Redesigned the UX</div></div>
         </li>
         <li>
           <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYQn97PSLfe8Tr0YyJwQWOoStqRZPALK47yg&usqp=CAU   alt=""/>
-          <div class="overlay"><span></span></div>
+          <div class="overlay"><div class="portfoliotext">Built the webpage from the ground up.</div></div>
         </li>
         <li>
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdqqrb-HGLMyUfU6COmT5OWgCHRlMbJYtAbA&usqp=CAU" alt="Northern power"/>
-          <div class="overlay"><span></span></div>
+          <div class="overlay"><div class="portfoliotext">Redesigned the backend.</div></div>
         </li>
         <li>
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROgCxDxvdGwtRGXxjNHWSjxPBvDqUYr1WDeA&usqp=CAU" alt="Northern power"/>
-          <div class="overlay"><span></span></div>
+          <div class="overlay"><div class="portfoliotext">Built the webpage from the ground up.</div></div>
         </li>
         <li>
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVXedRiCQqBRrC-Lqxh0W1WT2DLCDH23JlpA&usqp=CAU" alt="Northern power"/>
-          <div class="overlay"><span></span></div>
+          <div class="overlay"><div>Remodelled the SQL database.</div></div>
         </li>
         <li>
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLow5iR1VDnAvr7mmr_MEBETzTi92kPaEplA&usqp=CAU" alt="Northern power"/>
-          <div class="overlay"><div>Blockchain pioneers bringing transparency, trust, and security to supply.</div><span></span></div>
+          <div class="overlay"><div class="portfoliotext">Built the webpage from the ground up.</div></div>
         </li>
       </ul>
    </div>
 
    <!-- CONTACT ME -->
    <div id="contact" class="section">
-    <h2>Contact me</h2><br>
+    <h2>Contact me</h2><br><hr style="width:30%;text-align:left;"><br>
       <img class="contactinfo" src="./pngfind.com-map-icon-png-985482.png"> Sheffield, UK<br><br>
-      <img class="contactinfophone" src="./icons8-phone-96.png"> Phone: +447508 471167
-   </div>
+      <img class="contactinfophone" src="./icons8-phone-96.png"> Phone: +447508 471167<br><br>
+      <div class="container">
+        <form action="action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="name" name="name" placeholder="Your full name..">
+            </div><br>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Query</label>
+            </div>
+            <div class="col-75">
+              <textarea id="query" name="query" placeholder="How can I help you?"></textarea>
+            </div><br>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form><br><br>
+      </div>
+   
+    </div>
+
+
+
+
+
    <!-- KEEP FOOTER AT THE BOTTOM -->
    <div style="flex-grow:1"></div>
 
